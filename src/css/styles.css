@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-100 font-sans text-slate-800 antialiased min-h-screen p-4 md:p-8;
+  }
+}
+
+/* Opcional: Ocultar barras de desplazamiento manteniendo funcionalidad scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
